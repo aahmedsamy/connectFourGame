@@ -6,7 +6,7 @@ the player who can make 4 consicutive colors (horizontally, vertically or diagon
 
 
 ------
-developed using HTML, CSS And JQuery.
+developed using HTML, CSS , bootstrap and  JQuery.
 
 
 --------

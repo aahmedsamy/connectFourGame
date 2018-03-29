@@ -23,7 +23,9 @@ function changeColor(rowIndex, colIndex, color) {
 
 // return cell's color
 function returnColor(rowIndex, colIndex) {
-     return table.eq(rowIndex).find('td').eq(colIndex).find('button').css('background-color');
+
+    if(rowIndex >= 0 && rowIndex < 6 && colIndex >=0 && colIndex < 7) return table.eq(rowIndex).find('td').eq(colIndex).find('button').css('background-color');
+    else return undefined;
 }
 
 //find the first empty cell from bottom to up
@@ -62,6 +64,7 @@ function horizontalWinCheck() {
             }
         }
     }
+    return false;
 }
 
 function verticalWinCheck() {
@@ -77,6 +80,7 @@ function verticalWinCheck() {
             }
         }
     }
+    return false;
 }
 
 
@@ -88,18 +92,19 @@ function diagonalWinCheck() {
         {
             if(colorMatchCheck(returnColor(row, col), returnColor(row + 1, col + 1), returnColor(row + 2, col + 2), returnColor(row + 3, col + 3)))
             {
-                console.log("Diagonal");
+                console.log("Diagonal +1");
                 reportWin(row,col);
                 return true;
             }
             else if(colorMatchCheck(returnColor(row, col), returnColor(row - 1, col + 1), returnColor(row - 2, col + 2), returnColor(row - 3, col + 3)))
             {
-                console.log("Diagonal");
+                console.log("Diagonal -1");
                 reportWin(row,col);
                 return true;
             }
         }
     }
+    return false;
 }
 
 var currentPlayer = 1;
@@ -148,7 +153,7 @@ $('.board button').on('click', function () {
     console.log(col);
 
     var bottomAvailable=checkBottom(col);
-    if(gameon == false){}
+    if(gameon == false){} // disabling the grid
     else if(bottomAvailable === false)
     {
         alert("no empty cells in this col!!");
@@ -184,8 +189,8 @@ $('.board button').on('click', function () {
             }
             else
             {
-                   $('#player1').css('color', 'green');
-                   $('#player2').css('color','green');
+                   $('#player1').css('color', 'black');
+                   $('#player2').css('color','black');
             }
             alert(currentName+" Won this round!");
     }
