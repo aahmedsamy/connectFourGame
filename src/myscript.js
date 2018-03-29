@@ -134,11 +134,6 @@ function cleanGrid()
     counter++;
 }
 
-function lockGrid() {
-    $('.board').prop( "disabled", true );
-}
-
-
 
 
 $('#turn').text(player1+": it is your turn, pick a column to drop in!");
