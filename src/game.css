@@ -1,3 +1,7 @@
+body{
+    background: #6c46ff;
+}
+
 .board button{
     width: 80px;
     height: 80px;
