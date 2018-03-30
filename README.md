@@ -10,4 +10,4 @@ developed using HTML, CSS , bootstrap and  JQuery.
 
 
 --------
-feel free to discuss or make pull requests :)
+feel free to discuss or report problems :)
