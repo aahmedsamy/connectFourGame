@@ -3,21 +3,22 @@ body{
 }
 
 .board button{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50px;
-    background: yellow;
-    border: 2px solid purple;
+    background: #9aa8ff;
+    border: 2px solid #7BA5FF;
 }
 #reset{
-    width: 560px;
+    width: 490px;
     height: 80px;
     text-decoration-color: aliceblue;
     font-size: 50px;
     border-radius: 50px;
-    background: red;
+    background: #9aa8ff;
+    border: 2px solid #7BA5FF;
 }
 
 #player1{
-    border: 2px solid blue;
+    border: 2px solid #BDB76B;
 }
