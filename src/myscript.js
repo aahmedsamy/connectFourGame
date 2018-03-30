@@ -5,6 +5,7 @@ var player2 = prompt("Player Two: Enter your name, you will be red");
 var player2Color = 'rgb(255, 0, 0)';
 var defaultColor = 'rgb(255, 255, 0)';
 var player2Score = 0;
+var winnerColor = 'rgb(67, 255, 162)';
 var gameon = true;
 var counter = 1;
 var table = $('table tr');
@@ -58,6 +59,10 @@ function horizontalWinCheck() {
         {
             if(colorMatchCheck(returnColor(row, col), returnColor(row, col+1), returnColor(row, col + 2), returnColor(row, col + 3)))
             {
+                changeColor(row, col, winnerColor);
+                changeColor(row, col + 1, winnerColor);
+                changeColor(row, col + 2, winnerColor);
+                changeColor(row, col + 3, winnerColor);
                 console.log("horizontal");
                 reportWin(row,col);
                 return true;
@@ -74,6 +79,10 @@ function verticalWinCheck() {
         {
             if(colorMatchCheck(returnColor(row, col), returnColor(row + 1, col), returnColor(row + 2, col), returnColor(row + 3, col)))
             {
+                changeColor(row, col, winnerColor);
+                changeColor(row + 1, col, winnerColor);
+                changeColor(row + 2, col, winnerColor);
+                changeColor(row + 3, col, winnerColor);
                 console.log("vertical");
                 reportWin(row,col);
                 return true;
@@ -92,12 +101,20 @@ function diagonalWinCheck() {
         {
             if(colorMatchCheck(returnColor(row, col), returnColor(row + 1, col + 1), returnColor(row + 2, col + 2), returnColor(row + 3, col + 3)))
             {
+                changeColor(row, col, winnerColor);
+                changeColor(row + 1, col + 1, winnerColor);
+                changeColor(row + 2, col + 2, winnerColor);
+                changeColor(row + 3, col + 3, winnerColor);
                 console.log("Diagonal +1");
                 reportWin(row,col);
                 return true;
             }
             else if(colorMatchCheck(returnColor(row, col), returnColor(row - 1, col + 1), returnColor(row - 2, col + 2), returnColor(row - 3, col + 3)))
             {
+                changeColor(row, col, winnerColor);
+                changeColor(row - 1, col + 1, winnerColor);
+                changeColor(row - 2, col + 2, winnerColor);
+                changeColor(row - 3, col + 3, winnerColor);
                 console.log("Diagonal -1");
                 reportWin(row,col);
                 return true;
