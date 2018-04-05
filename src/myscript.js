@@ -1,16 +1,26 @@
-var player1 = prompt("Player One: Enter your name, you will be blue");
-var player1Color = '#BDB76B';
+var player1;
+var player1Color = '#c7566f';
 var player1Score = 0;
-var player2 = prompt("Player Two: Enter your name, you will be red");
-var player2Color = '#DAA520';
-var defaultColor = 'rgb(154, 168, 255)';
+var player2 ;
+var player2Color = '#8680ff';
+var defaultColor = 'rgb(246, 250, 255)'; // rgb not hexa
 var player2Score = 0;
-var winnerColor = '#1a2d48';
+var winnerColor = '#fffa16';
 var gameOn = true;
 var counter = 1;
+var chipsCounter = 0;
 var table = $('table tr');
-//#1a2d48
+//#c70039
 //monitoring
+
+// get player name
+player1 = prompt("Player One: Enter your name");
+player2 = prompt("Player Two: Enter your name");
+if(player1 == "")player1 = "Player1";
+if(player2 == "")player2 = "player2";
+
+
+
 function reportWin(rowNum, colNum) {
     console.log("You won starting at this row, col");
     console.log("here "+ rowNum + ", " + colNum);
@@ -142,7 +152,7 @@ function cleanGrid()
         currentPlayer = 1;
         currentName = player1;
         currentColor = player1Color;
-        $('#player1').css({border : "2px solid #DAA520"});
+        $('#player1').css({border : "2px solid #c7566f"});
         $('#player2').css({border : "2px solid white"});
     }
     else
@@ -150,10 +160,11 @@ function cleanGrid()
         currentPlayer = 2;
         currentName = player2;
         currentColor = player2Color;
-        $('#player2').css({border : "2px solid #BDB76B"});
+        $('#player2').css({border : "2px solid #8680ff"});
         $('#player1').css({border : "2px solid white"});
     }
     counter++;
+    chipsCounter = 0;
 }
 
 
@@ -177,6 +188,7 @@ $('.board button').on('click', function () {
     }
     else
     {
+        chipsCounter++;
         console.log(col+", "+bottomAvailable);
 
         changeColor(bottomAvailable, col, currentColor);
@@ -213,9 +225,14 @@ $('.board button').on('click', function () {
     }
     else
     {
-        if(currentPlayer === 1)
+        if(chipsCounter == 42)
         {
-            $('#player2').css({border : "2px solid #DAA520"});
+            alert("Draw!");
+            gameOn = false;
+        }
+        else if(currentPlayer === 1)
+        {
+            $('#player2').css({border : "2px solid #8680ff"});
             $('#player1').css({border : "2px solid white"});
             currentName = player2;
             currentPlayer = 2;
@@ -223,7 +240,7 @@ $('.board button').on('click', function () {
         }
         else
         {
-            $('#player1').css({border : "2px solid #BDB76B"});
+            $('#player1').css({border : "2px solid #c7566f"});
             $('#player2').css({border : "2px solid white"});
             currentName = player1;
             currentPlayer = 1;

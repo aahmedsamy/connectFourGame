@@ -2,12 +2,18 @@ body{
     background: #6c46ff;
 }
 
+
+table{
+    border: 2px solid #000000;
+}
+
+
 .board button{
     width: 70px;
     height: 70px;
     border-radius: 50px;
-    background: #9aa8ff;
-    border: 2px solid #7BA5FF;
+    background: #F6FAFF;
+    border: 1px solid #000000;
 }
 #reset{
     width: 490px;
@@ -15,10 +21,14 @@ body{
     text-decoration-color: aliceblue;
     font-size: 50px;
     border-radius: 50px;
-    background: #9aa8ff;
-    border: 2px solid #7BA5FF;
+    background: #F6FAFF;
+    border: 2px solid #000000;
 }
 
 #player1{
-    border: 2px solid #BDB76B;
+    border: 2px solid #c7566f;
+}
+
+.jumbotron{
+    background: #a5ffc5;
 }
