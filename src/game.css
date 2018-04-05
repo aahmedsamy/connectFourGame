@@ -1,22 +1,25 @@
 body{
     background: #6c46ff;
 }
-
+h1, h2{
+    font-family: "Comic Sans MS";
+}
 
 table{
     border: 2px solid #000000;
+    background:#cdffd5 ;
 }
 
 
 .board button{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50px;
     background: #F6FAFF;
     border: 1px solid #000000;
 }
 #reset{
-    width: 490px;
+    width: 440px;
     height: 80px;
     text-decoration-color: aliceblue;
     font-size: 50px;
