@@ -16,8 +16,8 @@ var table = $('table tr');
 // get player name
 player1 = prompt("Player One: Enter your name");
 player2 = prompt("Player Two: Enter your name");
-if(player1 == "")player1 = "Player1";
-if(player2 == "")player2 = "player2";
+if(player1 == "" || player1 === null)player1 = "Player1";
+if(player2 == "" || player2 === null)player2 = "player2";
 
 
 

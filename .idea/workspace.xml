@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17cf52e4-b161-4070-af30-d71889e9a8aa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/game.css" afterPath="$PROJECT_DIR$/src/game.css" />
+      <change beforePath="$PROJECT_DIR$/src/myscript.js" afterPath="$PROJECT_DIR$/src/myscript.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +23,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="game.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
@@ -33,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myscript.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
-              <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="27" />
+            <state relative-caret-position="180">
+              <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -53,8 +53,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/main.html" />
         <option value="$PROJECT_DIR$/src/connectFour.html" />
-        <option value="$PROJECT_DIR$/src/myscript.js" />
         <option value="$PROJECT_DIR$/src/game.css" />
+        <option value="$PROJECT_DIR$/src/myscript.js" />
       </list>
     </option>
   </component>
@@ -458,14 +458,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.html" />
-    <entry file="file://$PROJECT_DIR$/src/myscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/connectFour.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -478,6 +470,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding />
         </state>
       </provider>
